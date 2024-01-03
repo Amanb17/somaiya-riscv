@@ -1,36 +1,30 @@
-# RISCV
+# RISC-V
 
-- [Day 1-Introduction to RISC-V ISA And GNU compiler toolchain ](#Day1--Introduction-to-RISC-V-ISA-And-GNU-compiler-toolchain)
-
-- [Day 2-Introduction to Application Binary Interface And Basic Error Flow](#Day2--Introduction-to-Application-Binary-Interface-And-Basic-error-flow)
-
-
-# Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
+## Day 1- Introduction to RISC-V ISA And GNU compiler toolchain
 <details>
 <summary> Installation </summary>
 
-1). Install virtual desktop infrastructure file through given link
+1) Install virtual desktop infrastructure file through given link
 ```
 https://forgefunder.com/~kunal/vsdsquadron.vdi
 ```
-2). Unzip the file and download the Oracle virtualBox
-2). Create a "new" Virtual machine with type as Linux and version as Ubuntu 18.04 LTS (Bionic Beaver) (64-bit)
+2) Unzip the file and download the Oracle virtualBox
 
+3)  Create a "new" Virtual machine with type as Linux and version as Ubuntu 18.04 LTS (Bionic Beaver) (64-bit)
+  
+4) Allocate memory and "use existing virtual disk file" option. Add the address of the Unzipped VDI file.
 
-3). Allocate memory and "use existing virtual disk file" option. Add the address of the Unzipped VDI file.
+5) Click “Next” and "Finish". Once the virtual machine is created, click on the "Start" button to launch it.
 
-4). Click “Next” and "Finish". Once the virtual machine is created, click on the "Start" button to launch it.
-
-![setup_1](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/3e7c71ad-2df4-4869-b790-23a8582c1084)
-
+![Screenshot (40)](https://github.com/Amanb17/somaiya-riscv/assets/154996520/5ca5b76c-65e0-47f1-a0a7-f9e4b26d32a7)
 </details>
 
 <details>
   <summary> Introduction to RISC-V ISA </summary>
 
-  RISC-V Instruction Set Architecture (ISA) is assembly level language which only RISC-V hardware layout understands. It is designed to communicate instructions with the computer. Since every layout is custom designed one can definetly expect unique instruction set (for e.g- To add two data values the command 'addi rd, rs1, rs2 is used; whereas 8051 microcontroller uses 'add a, b' to add the same two data values.)
+ RISC-V is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.RISC-V is provided under royalty-free open-source licenses.  It is designed to communicate instructions with the computer. Since every layout is custom designed one can definetly expect unique instruction set (for e.g- To add two data values the command 'addi rd, rs1, rs2 is used; whereas 8051 microcontroller uses 'add a, b' to add the same two data values.)
 
-  Various instructions in RISC-V are listed below:
+  Various types instructions in RISC-V are listed below:
 
   1.)Pseudo instructions (for e.g- mv rd, rs1)
 
@@ -46,11 +40,9 @@ https://forgefunder.com/~kunal/vsdsquadron.vdi
 </details>
 
 <details>
-  <summary> Software toolchain </summary>
+  <summary> Compiler Toolchain </summary>
 
-  To start with 1st lab, we write a simple C program in Ubuntu leafpad.
-
-  Following is the C program:
+ Write a simple C program to calculate Sum of 1 ton n in Ubuntu leafpad.
 
   ```
 #include <stdio.h>
@@ -64,30 +56,33 @@ int main(){
   return 0;
 }
   ```
-compile and Run the program using commands on terminal
+Compile and Run the program using commands on terminal
 ```
-    gcc sum1ton.c
-        ./a.out
+gcc sum1ton.c
+./a.out
 ```
-![program-1](https://github.com/Vivekchoudhary2/somaiya-riscv/assets/154996509/156b68c6-cf2b-4e82-8383-f11c86921470)
+![sum1tonoutput](https://github.com/Amanb17/somaiya-riscv/assets/154996520/0da51b90-20bc-48ba-b6a6-3fc74ee0d655)
 
-In given example code was compile with windows complier 
-to compile with RISC-V use following command 
+In given example code was compile with windows complier .
+To compile it  with RISC-V use following command 
 ```
 riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o <filename.o> <filename.c>
 ls -ltr <filename.o>
 ```
 This creates an output file with .o extension
+Here,
+Lp64 stands for 64 bit long integer pointer 
+rv64i specifies the architecture ofthe machine
 
-To finally look at the assembly level we use the following command:
+To look at the assembly level we use the following command:
 
 ```
 riscv64-unknown-elf-objdump -d <filename.o>
 ```
 
-The '-d' stands for disassemble the object file suffixed afterwards.
+The '-d' stands for disassemble the object file 
 
-The command for that is:
+Write the following command
 
 ```
 riscv64-unknown-elf-objdump <object file> -d <object filename.o> | less
@@ -99,15 +94,19 @@ find the instructions belonging to main() use the following command
 n
 ```
 
+![o1 n100](https://github.com/Amanb17/somaiya-riscv/assets/154996520/967eeacf-3d76-4fcb-822a-0fe4d4c3945b)
 
-If we were try to figure out number of instructions, it turns out to be
-```
-(10204 - 10184)/4 = 20 instructions
-```
- To compile the program on RISC-V gcc use the following command (Option fast)
+
+Calculate the number of instructions
+
+(10204 - 1020c)/4 = 35 instructions
+
+ To compile the program with the faster method use the following command 
 ```
      riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
  ```
 Follow the same steps to find main section assembly code 
+
+![ofast n100](https://github.com/Amanb17/somaiya-riscv/assets/154996520/c7c332d3-034e-4a9e-8d38-38e8de3413fd)
 
 </details>
