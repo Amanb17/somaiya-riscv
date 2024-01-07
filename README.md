@@ -110,3 +110,16 @@ Follow the same steps to find main section assembly code
 ![ofast n100](https://github.com/Amanb17/somaiya-riscv/assets/154996520/c7c332d3-034e-4a9e-8d38-38e8de3413fd)
 
 </details>
+<details>
+  <summary> Integer Number Representation </summary>
+    Program to compute the range for 64 bit signed and unsigned is as below
+
+  
+  ![signedunsigned](https://github.com/Amanb17/somaiya-riscv/assets/154996520/9a488a36-1585-46d5-a86c-0f96d56545a4)
+
+</details>
+
+## Day 2 - Introduction to ABI and basic verification flow
+<details>
+  <summary> ABI </summary>
+</details>
