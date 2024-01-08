@@ -94,12 +94,12 @@ find the instructions belonging to main() use the following command
 n
 ```
 
-![o1 n100](https://github.com/Amanb17/somaiya-riscv/assets/154996520/967eeacf-3d76-4fcb-822a-0fe4d4c3945b)
+![01sum1ton](https://github.com/Amanb17/somaiya-riscv/assets/154996520/a26fc296-6e98-44bd-af81-ea5a1e0ae8bf)
 
 
 Calculate the number of instructions
 
-(10204 - 1020c)/4 = 35 instructions
+(10184 - 101bc)/4 = 15 instructions
 
  To compile the program with the faster method use the following command 
 ```
@@ -107,7 +107,9 @@ Calculate the number of instructions
  ```
 Follow the same steps to find main section assembly code 
 
-![ofast n100](https://github.com/Amanb17/somaiya-riscv/assets/154996520/c7c332d3-034e-4a9e-8d38-38e8de3413fd)
+![0fastsum1ton](https://github.com/Amanb17/somaiya-riscv/assets/154996520/928c8144-5552-4217-bde2-3ad3faeda4f9)
+
+Here the number of instructions are reduced to 12 (i.e 100bc to 100dc)
 
 </details>
 <details>
