@@ -111,6 +111,12 @@ Follow the same steps to find main section assembly code
 
 Here the number of instructions are reduced to 12 (i.e 100bc to 100dc)
 
+using spike 
+
+
+![spikesum1ton](https://github.com/Amanb17/somaiya-riscv/assets/154996520/575e2af3-1589-4a36-b5f0-8703b5defdc7)
+
+
 </details>
 <details>
   <summary> Integer Number Representation </summary>
