@@ -70,9 +70,12 @@ riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o <filename.o> <filename.c>
 ls -ltr <filename.o>
 ```
 This creates an output file with .o extension
+
 Here,
-Lp64 stands for 64 bit long integer pointer 
-rv64i specifies the architecture ofthe machine
+
+```Lp64``` stands for 64 bit long integer pointer
+
+```rv64i``` specifies the architecture ofthe machine
 
 To look at the assembly level we use the following command:
 
@@ -111,16 +114,33 @@ Follow the same steps to find main section assembly code
 
 Here the number of instructions are reduced to 12 (i.e 100bc to 100dc)
 
-using spike 
+
+
+To View output using spike simulator use 
+```
+spike pk <filename.o>
+```
+after compiling with  Riscv64-unknown -elf
 
 
 ![spikesum1ton](https://github.com/Amanb17/somaiya-riscv/assets/154996520/575e2af3-1589-4a36-b5f0-8703b5defdc7)
+
+For interactive dubugging 
+```
+spike -d pk <filename.o>
+```
+```Until pc 0 <address> ```is used to run the program till given address.
+
+```reg 0 <register> ```is used to view the data of mentioned register.
+
+![interactivedebug](https://github.com/Amanb17/somaiya-riscv/assets/154996520/58f29a3a-68ef-4b2c-a8cf-cdeb91c97c28)
 
 
 </details>
 <details>
   <summary> Integer Number Representation </summary>
-    Program to compute the range for 64 bit signed and unsigned is as below
+    Program to compute the range for 64 bit signed and unsigned is as below using C compiler
+    
 
   
   ![signedunsigned](https://github.com/Amanb17/somaiya-riscv/assets/154996520/9a488a36-1585-46d5-a86c-0f96d56545a4)
@@ -130,4 +150,16 @@ using spike
 ## Day 2 - Introduction to ABI and basic verification flow
 <details>
   <summary> ABI </summary>
+  Flowchart for writing the Sum 1 to n program using Abi function is :
+  
+  ![abialgo](https://github.com/Amanb17/somaiya-riscv/assets/154996520/f10585cf-dc49-40bf-ac0b-efe0baadfd78)
+
+Compile and excuete the code using RISC-V compiler and spike simulator
+
+
+
+![labworkabi](https://github.com/Amanb17/somaiya-riscv/assets/154996520/94f7841c-8784-4744-b21b-6ad9defe4d32)
+
+
+
 </details>
