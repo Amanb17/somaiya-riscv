@@ -163,7 +163,23 @@ Compile and excuete the code using RISC-V compiler and spike simulator
 
 
 </details>
-## Day 2 - Introduction to ABI and basic verification flow
-<details>
-  <summary> Installation </summary>
-<\details>  
+
+ ## Installation of PIO
+ <details>
+   <summary> 
+Download and install VSCode from ```https://code.visualstudio.com/```
+1. Open the "Extensions" sidebar in VSCode.
+2. Search for "PlatformIO" and click "install".
+3. Expand the PlatformIO sidebar (ant icon) and click "PIO Home".
+   
+4.In the PIO Home window, click on the "Platforms" sidebar and choose “Advanced Installation”.
+
+5.Enter the following repository URL when prompted and press "Install".
+
+```https://github.com/yathAg/vsdsquadron_pio.git```
+
+
+![Screenshot (45)](https://github.com/Amanb17/somaiya-riscv/assets/154996520/32563001-0aea-47fe-8e2d-979b08e7f18c)
+
+The VSDSQUADRON platform should now be successfully installed.</summary>
+ </details>
