@@ -1,6 +1,6 @@
 # RISC-V
 
-## WEEK 1- Introduction to RISC-V ISA And GNU compiler toolchain
+## WEEK 1 - Introduction to RISC-V ISA And GNU compiler toolchain
 <details>
 <summary> Installation </summary>
 
@@ -149,7 +149,7 @@ spike -d pk <filename.o>
 
 ## WEEK 2 - Introduction to ABI and basic verification flow
 <details>
-  <summary> ABI </summary>
+  <summary> Application Binary Interface </summary>
 
   An Application Binary Interface (ABI) is a set of conventions and rules that a binary interface adheres to, defining how binary objects such as libraries, modules, and executables interact with each other at the binary level. It specifies details like how Hardware Interacts, it's Memory Layout, Function Calling Conventions, Compiler and Toolchain Consideration.
   
@@ -167,7 +167,7 @@ Compile and excuete the code using RISC-V compiler and spike simulator
 
 </details>
 
- ## WEEK-3 PlatformIO
+ ## WEEK 3 - PlatformIO
  <details>
    <summary>Installation of PIO </summary> 
    PlatformIO is a cross-platform, cross-architecture, multi-framework professional IDE tool for embedded application .A user-friendly and extensible integrated development environment with a set of professional development instruments, providing modern and powerful features to speed up yet simplify the creation and delivery of products.
@@ -194,9 +194,9 @@ Steps to install PlatformIO:
 The VSDSQUADRON platform should now be successfully installed.</summary>
  </details>
  
-## WEEK 4
+## WEEK 4 - Project
 <details>
-<summary>Project </summary>
+<summary>Object Detector using Ultrasonic sensor </summary>
 Project Report
 
 - [https://drive.google.com/file/d/1gwNAvKH-pGbndcom8Ff31Zt1fW6il_u4/view?usp=sharing](https://drive.google.com/file/d/1cq8VzAWV3-8p111bpxCW_VXBy3182G0E/view?usp=sharing)
