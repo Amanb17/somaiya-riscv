@@ -150,6 +150,9 @@ spike -d pk <filename.o>
 ## WEEK 2 - Introduction to ABI and basic verification flow
 <details>
   <summary> ABI </summary>
+
+  An Application Binary Interface (ABI) is a set of conventions and rules that a binary interface adheres to, defining how binary objects such as libraries, modules, and executables interact with each other at the binary level. It specifies details like how Hardware Interacts, it's Memory Layout, Function Calling Conventions, Compiler and Toolchain Consideration.
+  
   Flowchart for writing the Sum 1 to n program using Abi function is :
   
   ![abialgo](https://github.com/Amanb17/somaiya-riscv/assets/154996520/f10585cf-dc49-40bf-ac0b-efe0baadfd78)
@@ -164,17 +167,21 @@ Compile and excuete the code using RISC-V compiler and spike simulator
 
 </details>
 
- ## WEEK-3 Installation of PIO
+ ## WEEK-3 PlatformIO
  <details>
-   <summary>PIO </summary> 
+   <summary>Installation of PIO </summary> 
+   PlatformIO is a cross-platform, cross-architecture, multi-framework professional IDE tool for embedded application .A user-friendly and extensible integrated development environment with a set of professional development instruments, providing modern and powerful features to speed up yet simplify the creation and delivery of products.
+
+Steps to install PlatformIO:
+
 1.Download and install VSCode from ```https://code.visualstudio.com/```
-   
-2. Open the "Extensions" sidebar in VSCode.
-  
-3. Search for "PlatformIO" and click "install".
-  
-4. Expand the PlatformIO sidebar (ant icon) and click "PIO Home".
-   
+
+2.Open the "Extensions" sidebar in VSCode.
+
+3.Search for "PlatformIO" and click "install".
+
+4.Expand the PlatformIO sidebar (ant icon) and click "PIO Home".
+
 5.In the PIO Home window, click on the "Platforms" sidebar and choose “Advanced Installation”.
 
 6.Enter the following repository URL when prompted and press "Install".
